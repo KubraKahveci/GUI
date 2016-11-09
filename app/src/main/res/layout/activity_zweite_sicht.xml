@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zweite_sicht"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kbra.gui.zweiteSicht">
+
+    <Button
+        android:text="zurück"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/zurück"
+        android:layout_marginEnd="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/weiter"
+        android:onClick="zurück" />
+
+    <Button
+        android:text="weiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="97dp"
+        android:id="@+id/weiter"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/zurück"
+        android:onClick="weiter" />
+
+    <TextView
+        android:text="Wähle eine Kategorie aus !"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:text="Hauptspeise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:id="@+id/Hauptspeise"
+        android:layout_below="@+id/Vorspeise"
+        android:layout_alignStart="@+id/Vorspeise"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        android:layout_toStartOf="@+id/weiter"
+        android:onClick="Hauptspeise" />
+
+    <CheckBox
+        android:text="Vorspeise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:id="@+id/Vorspeise"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:onClick="Vorspeise" />
+
+    <CheckBox
+        android:text="Nachspeise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/Nachspeise"
+        android:layout_below="@+id/Hauptspeise"
+        android:layout_alignStart="@+id/Hauptspeise"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp"
+        android:onClick="Nachspeise" />
+
+</RelativeLayout>

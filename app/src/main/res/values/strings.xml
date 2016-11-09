@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GUI</string>
+    <string name="action_settings">Settings</string>
+
+
+        <string-array name="Saisonauswahl">
+            <item>Wähle Saison!</item>
+            <item>Frühling</item>
+            <item>Sommer</item>
+            <item>Herbst</item>
+            <item>Winter</item>
+        </string-array>
+
+</resources>
